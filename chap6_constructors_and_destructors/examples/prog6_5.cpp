@@ -35,9 +35,11 @@ void String :: join(String &str){
 }
 /*--------Main Program---------*/
 int main(void){
-	cout << "Main Starts";
-	string s = "Kun";
-	String s1(s), s2("al");
+	char name1[] = "Kun";
+	char name2[] = "al";
+	const char *s = name1;
+	const char *v = name2;
+	String s1(s), s2(v);
 	s1.join(s2);
 	s1.display();
 	return 0;
