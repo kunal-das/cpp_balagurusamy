@@ -29,10 +29,6 @@ class triangle : public shape{
 
 class rectangle : public shape{
 	public:
-		void display_area(void){
-			float area = side1 * side2;
-			cout << "Area = " << area << endl;
-		}
 };
 
 class circle : public shape{
